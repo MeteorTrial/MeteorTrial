@@ -1,0 +1,17 @@
+<template name="polllist">
+<table class="table table-striped">
+<tbody>
+{{#each poll}}
+{{>polldisplay}}
+{{/each}}
+</tbody>
+</table>
+</template>
+
+<template name="polldisplay">
+<tr>
+<center><h1><a href= "/polling/{{_id}}">{{question}}</a></h1></center>
+</tr>
+</template>
+
+
